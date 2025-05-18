@@ -1,2 +1,4 @@
 // NotFound.jsx
-export default function NotFound() { return <div>NotFound.jsx</div>; }
+export default function NotFound() {
+return <div>NotFound</div>;
+}

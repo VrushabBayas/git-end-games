@@ -1,0 +1,68 @@
+:root {
+  --font-body: "Roboto", sans-serif;
+  --font-heading: "Raleway", sans-serif;
+  --code-font-body:"Fira Code", monospace;
+  --color-bg: #f9f9f9;
+  --color-text: #222;
+  --color-accent: #0077ff;
+  --color-muted: #555;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+code, pre{
+  font-family:var(--code-font-body);
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--color-muted);
+}
+
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Container */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+/* Buttons */
+.btn {
+  background: var(--color-accent);
+  color: white;
+  padding: 0.6rem 1.2rem
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #005fcc;
+}

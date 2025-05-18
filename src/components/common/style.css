@@ -1,0 +1,77 @@
+.header h2 {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 1rem;
+  background-color: white;
+}
+.header .subheader {
+  display: flex;
+  justify-content: center;
+}
+
+.header .header-subsection--left {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  background-color: #cdcfd0; /* teal tone */
+  width: 60%;
+  padding: 2rem;
+}
+
+.header .header-subsection--left h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2e3a49;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.header .header-subsection--left p {
+  font-size: 1.25rem;
+  color: #2e3a49;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header .header-subsection--left .author {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  color: #2e3a49;
+}
+
+.header .header-subsection--left .author img {
+  height: 120px;
+  background-color: orange;
+  border-radius: 50%;
+}
+
+.header .header-subsection--left .author .author-info {
+  text-align: left;
+}
+
+.header .header-subsection--left .author .author-info .name {
+  font-weight: bold;
+}
+
+.header .header-subsection--left .author .author-info .tagline {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.header .header-subsection--right {
+  width: 40%;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header .header-subsection--right img {
+  width: 15rem;
+  height: auto;
+  border-radius: 0.5rem;
+}

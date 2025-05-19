@@ -25,6 +25,36 @@ body {
 code, pre{
   font-family:var(--code-font-body);
 }
+/* Base styling for inline code */
+code {
+  background-color: #f4f4f4;
+  color: #d6336c;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 1rem;
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+}
+
+/* Styling for code blocks */
+pre {
+  background-color: #1e1e1e;
+  color: #f8f8f2;
+  padding: 1rem;
+  overflow-x: auto;
+  border-radius: 8px;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  position: relative;
+}
+
+/* Optional: add a border or subtle shadow */
+pre {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #2c2c2c;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
   margin-bottom: 0.5em;

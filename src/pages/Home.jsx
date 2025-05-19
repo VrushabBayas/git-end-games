@@ -1,4 +1,5 @@
 // Home.jsx
+import { Link } from 'react-router-dom';
 import TableOfContent from '../components/common/TableContent';
 
 import GitLogo from '../assets/git-end-game.png';
@@ -17,11 +18,12 @@ return (
         </div>
         <div className="author-info">
           <p className="name">Vrushabh Bayas</p>
-          <p className="tagline">Web Developer</p>
-          <p className="tagline">I have amezing wife and few childrens</p>
-          <p className="tagline">I love to go on bike rides.</p>
+          <p className="tagline">Twitter : @Vrushabhayas</p>
           <p className="tagline">
-            I bring 7 years of experience in building web apps using , javascript and React.
+            LinkedIn :{' '}
+            <Link to={'https://www.linkedin.com/in/vrushabh-bayas-32ba8415b'}>
+            Vrushabh Bayas
+            </Link>
           </p>
         </div>
       </div>

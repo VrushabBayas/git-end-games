@@ -10,27 +10,51 @@ Git is a **distributed version control system** that helps developers track chan
 - **Speed**: Perform most operations locally with minimal latency.
 - **Backup**: Every clone is a full backup of the repository.
 
-## 🚀 Key Concepts
+# 🚀 Key Concepts
 
-### Repository (Repo)
-A folder that Git tracks. It contains the entire history of all files and directories in the project.
+## 🧳 Git Object has 4 fundamental objects as below
 
-### Commit
+## blob
+
+A file's content
+
+## Commit
+
 A snapshot of the project's files at a specific point in time. Commits form the building blocks of Git history.
 
-### Branch
-A movable pointer to a commit. Branches help isolate work (e.g., for new features or bug fixes).
+## tag
 
-### Merge
-Combines changes from different branches. Git tries to automatically reconcile differences.
+a reference to the commit
 
-### Clone
-Creates a local copy of a remote repository, including the entire history.
+## Tree
 
-### Pull / Push
-- **Pull**: Fetch and integrate changes from a remote repository.
-- **Push**: Upload your local changes to a remote repository.
+In Git, a tree is one of the core object types that represents a directory. It acts like a folder that can contain:
 
+  - **SHA1** hashes pointing to the actual blob/tree objects
+  - **type** type of pointer (blob or tree)
+  - **filename** or directory name
+  - **mode** (executable file , symbolic link...)
+
+  ```
+    $ git cat-file -p <tree-sha>
+    100644 blob 3f4e8cd...    README.md
+    100644 blob d1c3f1a...    main.js
+    040000 tree 9b1cde1...    src
+
+  // if you want to generate SHA1
+
+   echo "Hello world" | git hash-object --stdin
+  ```
+
+## 🧠 Real-World Analogy
+- If a Git commit is like a save point, then:
+- A tree is the folder structure at that save point
+- A blob is the actual content of each file
+
+## TL;DR 
+- A **tree** inGit is snapshot of a directory.
+- It stores file names, persmissions, and references to file (blob) and subdirectory (tree) objects.
+- It's essential for tracking project structure over time.
 ## 🔧 Basic Git Workflow
 
 ```bash
@@ -48,3 +72,4 @@ git remote add origin <url>
 
 # 5. Push changes
 git push -u origin main
+```

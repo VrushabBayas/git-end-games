@@ -34,7 +34,9 @@ p {
   margin-bottom: 1rem;
   color: var(--color-muted);
 }
-
+ul{
+  margin-left: 2rem;
+}
 a {
   color: var(--color-accent);
   text-decoration: none;
@@ -43,7 +45,10 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
+.container{
+  margin:1rem 10rem;
+  padding:1rem 5rem;
+}
 /* Buttons */
 .btn {
   background: var(--color-accent);

@@ -1,0 +1,50 @@
+# Introduction to Git
+
+Git is a **distributed version control system** that helps developers track changes in source code during software development. It allows multiple people to collaborate efficiently while ensuring the project's history and integrity are maintained.
+
+## 🔍 Why Use Git?
+
+- **Version History**: Revert to previous states of your project.
+- **Collaboration**: Work seamlessly with multiple contributors.
+- **Branching**: Experiment with features safely.
+- **Speed**: Perform most operations locally with minimal latency.
+- **Backup**: Every clone is a full backup of the repository.
+
+## 🚀 Key Concepts
+
+### Repository (Repo)
+A folder that Git tracks. It contains the entire history of all files and directories in the project.
+
+### Commit
+A snapshot of the project's files at a specific point in time. Commits form the building blocks of Git history.
+
+### Branch
+A movable pointer to a commit. Branches help isolate work (e.g., for new features or bug fixes).
+
+### Merge
+Combines changes from different branches. Git tries to automatically reconcile differences.
+
+### Clone
+Creates a local copy of a remote repository, including the entire history.
+
+### Pull / Push
+- **Pull**: Fetch and integrate changes from a remote repository.
+- **Push**: Upload your local changes to a remote repository.
+
+## 🔧 Basic Git Workflow
+
+```bash
+# 1. Initialize a repository
+git init
+
+# 2. Add files to staging area
+git add <filename>
+
+# 3. Commit changes
+git commit -m "Your commit message"
+
+# 4. Connect to a remote repository
+git remote add origin <url>
+
+# 5. Push changes
+git push -u origin main
